@@ -160,7 +160,6 @@ public class CarFrame extends JFrame {
 		            String car_type = txtcar_type.getText();
 		            String car_transmission = txtcar_transmission.getText();
 
-		            // ✅ FIXED QUERY
 		            String query = "INSERT INTO car (car_name, car_color, car_fuel_type, car_price, car_type, car_transmission) VALUES (?, ?, ?, ?, ?, ?)";
 
 		            PreparedStatement ps = con.prepareStatement(query);
