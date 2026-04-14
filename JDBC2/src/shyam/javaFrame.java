@@ -139,7 +139,6 @@ public class javaFrame extends JFrame {
 		            int total_employees = Integer.parseInt(txttotal_employees.getText());
 		            int total_cars_in_stock = Integer.parseInt(txttotal_cars_in_stock.getText());
 
-		            // ✅ FIXED QUERY
 		            String query = "INSERT INTO showroom (showroom_name, showroom_address, manager_name, total_employees, total_cars_in_stock) VALUES (?, ?, ?, ?, ?)";
 
 		            PreparedStatement ps = con.prepareStatement(query);
