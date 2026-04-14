@@ -122,7 +122,6 @@ public class EmpolyesFrame extends JFrame {
 		            int emp_age = Integer.parseInt(txtemp_age.getText());
 		            String emp_department = txtemp_department.getText();
 
-		            // ✅ FIXED QUERY
 		            String query = "INSERT INTO employees (emp_id, emp_name, emp_age, emp_department) VALUES (?, ?, ?, ?)";
 
 		            PreparedStatement ps = con.prepareStatement(query);
